@@ -1,6 +1,7 @@
 /** Graph.h */
 #ifndef GRAPH_H
 #define GRAPH_H
+
 #include <list>
 #include <vector>
 #include <iostream>
@@ -8,6 +9,7 @@
 #include <iomanip>
 #include <limits>
 #include <string>
+
 #define PLUS_INF INT_MAX/2
 enum VertexStatus { UN_VISITED, VISITED, VRTX_NOT_FOUND };
 enum EdgeStatus { DISCOVERY, BACK, CROSS, EDGE_UN_VISITED, EDGE_VISITED, EDGE_NOT_FOUND };
