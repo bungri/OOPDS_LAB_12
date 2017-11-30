@@ -19,16 +19,16 @@ void main()
 	VtxList path;
 
 	Vertex v[NUM_NODES] = {
-		Vertex("V00", 0, UN_VISITED),
-		Vertex("V01", 1, UN_VISITED),
-		Vertex("V02", 2, UN_VISITED),
-		Vertex("V03", 3, UN_VISITED),
-		Vertex("V04", 4, UN_VISITED),
-		Vertex("V05", 5, UN_VISITED),
-		Vertex("V06", 6, UN_VISITED),
-		Vertex("V07", 7, UN_VISITED),
-		Vertex("V08", 8, UN_VISITED),
-		Vertex("V09", 9, UN_VISITED),
+		Vertex("V00",  0, UN_VISITED),
+		Vertex("V01",  1, UN_VISITED),
+		Vertex("V02",  2, UN_VISITED),
+		Vertex("V03",  3, UN_VISITED),
+		Vertex("V04",  4, UN_VISITED),
+		Vertex("V05",  5, UN_VISITED),
+		Vertex("V06",  6, UN_VISITED),
+		Vertex("V07",  7, UN_VISITED),
+		Vertex("V08",  8, UN_VISITED),
+		Vertex("V09",  9, UN_VISITED),
 		Vertex("V10", 10, UN_VISITED),
 		Vertex("V11", 11, UN_VISITED),
 		Vertex("V12", 12, UN_VISITED),
@@ -47,17 +47,17 @@ void main()
 	};
 	Graph::Edge edges[NUM_EDGES] =
 	{
-		Edge(v[0], v[1], 1), Edge(v[1], v[0], 1),
-		Edge(v[0], v[5], 1), Edge(v[5], v[0], 1),
-		Edge(v[1], v[2], 1), Edge(v[2], v[1], 1),
-		Edge(v[1], v[6], 1), Edge(v[6], v[1], 1),
-		Edge(v[3], v[8], 1), Edge(v[8], v[3], 1),
-		Edge(v[4], v[9], 1), Edge(v[9], v[4], 1),
-		Edge(v[6], v[7], 1), Edge(v[7], v[6], 1),
-		Edge(v[6], v[11], 1), Edge(v[11], v[6], 1),
-		Edge(v[7], v[8], 1), Edge(v[8], v[7], 1),
-		Edge(v[8], v[13], 1), Edge(v[13], v[8], 1),
-		Edge(v[9], v[14], 1), Edge(v[14], v[9], 1),
+		Edge(v[ 0], v[ 1], 1), Edge(v[ 1], v[ 0], 1),
+		Edge(v[ 0], v[ 5], 1), Edge(v[ 5], v[ 0], 1),
+		Edge(v[ 1], v[ 2], 1), Edge(v[ 2], v[ 1], 1),
+		Edge(v[ 1], v[ 6], 1), Edge(v[ 6], v[ 1], 1),
+		Edge(v[ 3], v[ 8], 1), Edge(v[ 8], v[ 3], 1),
+		Edge(v[ 4], v[ 9], 1), Edge(v[ 9], v[ 4], 1),
+		Edge(v[ 6], v[ 7], 1), Edge(v[ 7], v[ 6], 1),
+		Edge(v[ 6], v[11], 1), Edge(v[11], v[ 6], 1),
+		Edge(v[ 7], v[ 8], 1), Edge(v[ 8], v[ 7], 1),
+		Edge(v[ 8], v[13], 1), Edge(v[13], v[ 8], 1),
+		Edge(v[ 9], v[14], 1), Edge(v[14], v[ 9], 1),
 		Edge(v[10], v[11], 1), Edge(v[11], v[10], 1),
 		Edge(v[10], v[15], 1), Edge(v[15], v[10], 1),
 		Edge(v[12], v[17], 1), Edge(v[17], v[12], 1),
@@ -124,9 +124,13 @@ void main()
 	fout << "Path found by BFS (shortest) from " << v[test_start] << " to " << v[test_end] << " : ";
 	for (VtxItor vItor = path.begin(); vItor != path.end(); ++vItor)
 		fout << *vItor << " ";
+
 	fout << endl;
+	cout << "\nFinding paths with smallest number of edges from node " << test_start << " " << endl;
 	fout << "\nFinding paths with smallest number of edges from node " << test_start << " " << endl;
 	bfsGraph.findShortestPaths(v[test_start], fout);
+
+	cout << "\nFinding paths with smallest number of edges from node " << test_end << " " << endl;
 	fout << "\nFinding paths with smallest number of edges from node " << test_end << " " << endl;
 	bfsGraph.findShortestPaths(v[test_end], fout);
 	fout.close();

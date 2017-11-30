@@ -1,0 +1,124 @@
+Inserting vertices ..
+Inserted vertices: V00, V01, V02, V03, V04, V05, V06, V07, V08, V09, V10, V11, V12, V13, V14, V15, V16, V17, V18, V19, V20, V21, V22, V23, V24, 
+Inserting edges ..
+Inserted edges: 
+Edge(V00, V01, d( 1)), Edge(V00, V05, d( 1)), Edge(V01, V00, d( 1)), Edge(V01, V02, d( 1)), Edge(V01, V06, d( 1)), 
+Edge(V02, V01, d( 1)), Edge(V03, V08, d( 1)), Edge(V04, V09, d( 1)), Edge(V05, V00, d( 1)), Edge(V06, V01, d( 1)), 
+Edge(V06, V07, d( 1)), Edge(V06, V11, d( 1)), Edge(V07, V06, d( 1)), Edge(V07, V08, d( 1)), Edge(V08, V03, d( 1)), 
+Edge(V08, V07, d( 1)), Edge(V08, V13, d( 1)), Edge(V09, V04, d( 1)), Edge(V09, V14, d( 1)), Edge(V10, V11, d( 1)), 
+Edge(V10, V15, d( 1)), Edge(V11, V06, d( 1)), Edge(V11, V10, d( 1)), Edge(V12, V17, d( 1)), Edge(V13, V08, d( 1)), 
+Edge(V13, V14, d( 1)), Edge(V14, V09, d( 1)), Edge(V14, V13, d( 1)), Edge(V14, V19, d( 1)), Edge(V15, V10, d( 1)), 
+Edge(V15, V16, d( 1)), Edge(V15, V20, d( 1)), Edge(V16, V15, d( 1)), Edge(V16, V21, d( 1)), Edge(V17, V12, d( 1)), 
+Edge(V17, V18, d( 1)), Edge(V17, V22, d( 1)), Edge(V18, V17, d( 1)), Edge(V18, V19, d( 1)), Edge(V18, V23, d( 1)), 
+Edge(V19, V14, d( 1)), Edge(V19, V18, d( 1)), Edge(V20, V15, d( 1)), Edge(V21, V16, d( 1)), Edge(V21, V22, d( 1)), 
+Edge(V22, V17, d( 1)), Edge(V22, V21, d( 1)), Edge(V23, V18, d( 1)), Edge(V23, V24, d( 1)), Edge(V24, V23, d( 1)), 
+
+Print out Graph based on Adjacency List ..
+ A Edge(V00, V01, d( 1)) Edge(V00, V05, d( 1)) 
+ B Edge(V01, V00, d( 1)) Edge(V01, V02, d( 1)) Edge(V01, V06, d( 1)) 
+ C Edge(V02, V01, d( 1)) 
+ D Edge(V03, V08, d( 1)) 
+ E Edge(V04, V09, d( 1)) 
+ F Edge(V05, V00, d( 1)) 
+ G Edge(V06, V01, d( 1)) Edge(V06, V07, d( 1)) Edge(V06, V11, d( 1)) 
+ H Edge(V07, V06, d( 1)) Edge(V07, V08, d( 1)) 
+ I Edge(V08, V03, d( 1)) Edge(V08, V07, d( 1)) Edge(V08, V13, d( 1)) 
+ J Edge(V09, V04, d( 1)) Edge(V09, V14, d( 1)) 
+ K Edge(V10, V11, d( 1)) Edge(V10, V15, d( 1)) 
+ L Edge(V11, V06, d( 1)) Edge(V11, V10, d( 1)) 
+ M Edge(V12, V17, d( 1)) 
+ N Edge(V13, V08, d( 1)) Edge(V13, V14, d( 1)) 
+ O Edge(V14, V09, d( 1)) Edge(V14, V13, d( 1)) Edge(V14, V19, d( 1)) 
+ P Edge(V15, V10, d( 1)) Edge(V15, V16, d( 1)) Edge(V15, V20, d( 1)) 
+ Q Edge(V16, V15, d( 1)) Edge(V16, V21, d( 1)) 
+ R Edge(V17, V12, d( 1)) Edge(V17, V18, d( 1)) Edge(V17, V22, d( 1)) 
+ S Edge(V18, V17, d( 1)) Edge(V18, V19, d( 1)) Edge(V18, V23, d( 1)) 
+ T Edge(V19, V14, d( 1)) Edge(V19, V18, d( 1)) 
+ U Edge(V20, V15, d( 1)) 
+ V Edge(V21, V16, d( 1)) Edge(V21, V22, d( 1)) 
+ W Edge(V22, V17, d( 1)) Edge(V22, V21, d( 1)) 
+ X Edge(V23, V18, d( 1)) Edge(V23, V24, d( 1)) 
+ Y Edge(V24, V23, d( 1)) 
+
+Least Cost from start at each round : 
+   |    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20   21   22   23   24
+-----------+-----------------------------------------------------------------------------------------------------------------------------
+ 1 |    0    1    2  +oo  +oo    1    2  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 2 |    0    1    2  +oo  +oo    1    2  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 3 |    0    1    2  +oo  +oo    1    2  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 4 |    0    1    2  +oo  +oo    1    2    3  +oo  +oo  +oo    3  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 5 |    0    1    2  +oo  +oo    1    2    3    4  +oo  +oo    3  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 6 |    0    1    2  +oo  +oo    1    2    3    4  +oo    4    3  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 7 |    0    1    2    5  +oo    1    2    3    4  +oo    4    3  +oo    5  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 8 |    0    1    2    5  +oo    1    2    3    4  +oo    4    3  +oo    5  +oo    5  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+ 9 |    0    1    2    5  +oo    1    2    3    4  +oo    4    3  +oo    5  +oo    5  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+10 |    0    1    2    5  +oo    1    2    3    4  +oo    4    3  +oo    5    6    5  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo  +oo
+11 |    0    1    2    5  +oo    1    2    3    4  +oo    4    3  +oo    5    6    5    6  +oo  +oo  +oo    6  +oo  +oo  +oo  +oo
+12 |    0    1    2    5  +oo    1    2    3    4    7    4    3  +oo    5    6    5    6  +oo  +oo    7    6  +oo  +oo  +oo  +oo
+13 |    0    1    2    5  +oo    1    2    3    4    7    4    3  +oo    5    6    5    6  +oo  +oo    7    6    7  +oo  +oo  +oo
+14 |    0    1    2    5  +oo    1    2    3    4    7    4    3  +oo    5    6    5    6  +oo  +oo    7    6    7  +oo  +oo  +oo
+15 |    0    1    2    5    8    1    2    3    4    7    4    3  +oo    5    6    5    6  +oo  +oo    7    6    7  +oo  +oo  +oo
+16 |    0    1    2    5    8    1    2    3    4    7    4    3  +oo    5    6    5    6  +oo    8    7    6    7  +oo  +oo  +oo
+17 |    0    1    2    5    8    1    2    3    4    7    4    3  +oo    5    6    5    6  +oo    8    7    6    7    8  +oo  +oo
+18 |    0    1    2    5    8    1    2    3    4    7    4    3  +oo    5    6    5    6  +oo    8    7    6    7    8  +oo  +oo
+19 |    0    1    2    5    8    1    2    3    4    7    4    3  +oo    5    6    5    6    9    8    7    6    7    8    9  +oo
+20 |    0    1    2    5    8    1    2    3    4    7    4    3  +oo    5    6    5    6    9    8    7    6    7    8    9  +oo
+21 |    0    1    2    5    8    1    2    3    4    7    4    3   10    5    6    5    6    9    8    7    6    7    8    9  +oo
+22 |    0    1    2    5    8    1    2    3    4    7    4    3   10    5    6    5    6    9    8    7    6    7    8    9   10
+23 |    0    1    2    5    8    1    2    3    4    7    4    3   10    5    6    5    6    9    8    7    6    7    8    9   10
+24 | reached to the target node !!
+Path found by BFS (shortest) from V00 to V24 : V00 V01 V06 V07 V08 V13 V14 V19 V18 V23 V24 
+
+Finding paths with smallest number of edges from node 0 
+shortest path from  0 to  0 :  0
+shortest path from  0 to  1 :  0 ->  1
+shortest path from  0 to  2 :  0 ->  1 ->  2
+shortest path from  0 to  3 :  0 ->  1 ->  6 ->  7 ->  8 ->  3
+shortest path from  0 to  4 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 ->  9 ->  4
+shortest path from  0 to  5 :  0 ->  5
+shortest path from  0 to  6 :  0 ->  1 ->  6
+shortest path from  0 to  7 :  0 ->  1 ->  6 ->  7
+shortest path from  0 to  8 :  0 ->  1 ->  6 ->  7 ->  8
+shortest path from  0 to  9 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 ->  9
+shortest path from  0 to 10 :  0 ->  1 ->  6 -> 11 -> 10
+shortest path from  0 to 11 :  0 ->  1 ->  6 -> 11
+shortest path from  0 to 12 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 -> 19 -> 18 -> 17 -> 12
+shortest path from  0 to 13 :  0 ->  1 ->  6 ->  7 ->  8 -> 13
+shortest path from  0 to 14 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14
+shortest path from  0 to 15 :  0 ->  1 ->  6 -> 11 -> 10 -> 15
+shortest path from  0 to 16 :  0 ->  1 ->  6 -> 11 -> 10 -> 15 -> 16
+shortest path from  0 to 17 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 -> 19 -> 18 -> 17
+shortest path from  0 to 18 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 -> 19 -> 18
+shortest path from  0 to 19 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 -> 19
+shortest path from  0 to 20 :  0 ->  1 ->  6 -> 11 -> 10 -> 15 -> 20
+shortest path from  0 to 21 :  0 ->  1 ->  6 -> 11 -> 10 -> 15 -> 16 -> 21
+shortest path from  0 to 22 :  0 ->  1 ->  6 -> 11 -> 10 -> 15 -> 16 -> 21 -> 22
+shortest path from  0 to 23 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 -> 19 -> 18 -> 23
+shortest path from  0 to 24 :  0 ->  1 ->  6 ->  7 ->  8 -> 13 -> 14 -> 19 -> 18 -> 23 -> 24
+
+Finding paths with smallest number of edges from node 24 
+shortest path from 24 to  0 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  7 ->  6 ->  1 ->  0
+shortest path from 24 to  1 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  7 ->  6 ->  1
+shortest path from 24 to  2 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  7 ->  6 ->  1 ->  2
+shortest path from 24 to  3 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  3
+shortest path from 24 to  4 : 24 -> 23 -> 18 -> 19 -> 14 ->  9 ->  4
+shortest path from 24 to  5 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  7 ->  6 ->  1 ->  0 ->  5
+shortest path from 24 to  6 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  7 ->  6
+shortest path from 24 to  7 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  7
+shortest path from 24 to  8 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8
+shortest path from 24 to  9 : 24 -> 23 -> 18 -> 19 -> 14 ->  9
+shortest path from 24 to 10 : 24 -> 23 -> 18 -> 17 -> 22 -> 21 -> 16 -> 15 -> 10
+shortest path from 24 to 11 : 24 -> 23 -> 18 -> 19 -> 14 -> 13 ->  8 ->  7 ->  6 -> 11
+shortest path from 24 to 12 : 24 -> 23 -> 18 -> 17 -> 12
+shortest path from 24 to 13 : 24 -> 23 -> 18 -> 19 -> 14 -> 13
+shortest path from 24 to 14 : 24 -> 23 -> 18 -> 19 -> 14
+shortest path from 24 to 15 : 24 -> 23 -> 18 -> 17 -> 22 -> 21 -> 16 -> 15
+shortest path from 24 to 16 : 24 -> 23 -> 18 -> 17 -> 22 -> 21 -> 16
+shortest path from 24 to 17 : 24 -> 23 -> 18 -> 17
+shortest path from 24 to 18 : 24 -> 23 -> 18
+shortest path from 24 to 19 : 24 -> 23 -> 18 -> 19
+shortest path from 24 to 20 : 24 -> 23 -> 18 -> 17 -> 22 -> 21 -> 16 -> 15 -> 20
+shortest path from 24 to 21 : 24 -> 23 -> 18 -> 17 -> 22 -> 21
+shortest path from 24 to 22 : 24 -> 23 -> 18 -> 17 -> 22
+shortest path from 24 to 23 : 24 -> 23
+shortest path from 24 to 24 : 24
